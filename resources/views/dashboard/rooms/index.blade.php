@@ -1,5 +1,4 @@
 @extends('dashboard.layouts.main')
-
 @section('container')
 <div class="col-md-10 p-0">
     <h2 class="content-title text-center">Daftar {{$title}}</h2>

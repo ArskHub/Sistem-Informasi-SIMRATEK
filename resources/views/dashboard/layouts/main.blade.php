@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="/css/responsive.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/landingPage.css" />
-    <link
+    {{-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
-    />
+    /> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -33,17 +33,23 @@
     <title>SIMRATEK | {{$title}} </title>
   </head>
   <body>
-      @include('dashboard.partials.navbar')
+    <!-- Navbar Partial -->
+    @include('dashboard.partials.navbar') <!-- Pastikan navbar.blade.php ada di resources/views/dashboard/partials -->
 
     <main>
         <div class="row m-0 sidebar-container">
-            @include('dashboard.partials.sidebar')
+            <!-- Sidebar Partial -->
+            @include('dashboard.partials.sidebar') <!-- Pastikan sidebar.blade.php ada di resources/views/dashboard/partials -->
         
-            @yield('container')
+            @yield('container') <!-- Konten Dinamis -->
         </div>
     </main>
-      @include('dashboard.partials.footer')
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Footer Partial -->
+    @include('dashboard.partials.footer') <!-- Pastikan footer.blade.php ada di resources/views/dashboard/partials -->
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/js/index.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
@@ -60,11 +66,11 @@
       $('#datatable_length').css('text-align', 'left');
       $('#datatable_info').css('text-align', 'left');
     </script>
-    {{-- Room Edit Modal --}}
+
+    <!-- Additional JS files for Room, User, Admin Edit Modals -->
     <script src="/js/editroom.js"></script>
     <script src="/js/edituser.js"></script>
     <script src="/js/editadmin.js"></script>
 
-    
   </body>
 </html>
