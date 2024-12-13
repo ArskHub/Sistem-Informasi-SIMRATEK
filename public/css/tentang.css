@@ -1,0 +1,226 @@
+.section-description {
+    text-align: justify;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+
+
+/* Hero Section */
+.hero-about {
+    background-color: white; /* Tetap putih */
+    padding: 80px 0;
+    color: #333; /* Warna teks utama */
+}
+
+.hero__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Gunakan flexbox untuk menata elemen secara horizontal */
+    justify-content: space-between; /* Menyebar elemen kiri dan kanan */
+    align-items: center; /* Vertikal rata tengah */
+    flex-wrap: wrap; /* Agar responsif, elemen bisa turun ke bawah jika perlu */
+    z-index: 1;
+}
+
+.hero-description {
+    background-color: white; /* Latar belakang putih untuk deskripsi */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    border: 2px solid #007bff; /* Border biru */
+    margin: 0;
+    flex: 1; /* Elemen ini akan mengisi sisa ruang */
+}
+
+.hero-description h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #9B5DE5; /* Warna ungu untuk judul */
+    margin-bottom: 20px;
+}
+
+.hero-description p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555; /* Warna teks lebih gelap untuk deskripsi */
+    margin-top: 10px;
+}
+
+.hero-description span {
+    color: #4A90E2; /* Warna biru untuk teks dalam span */
+}
+
+.hero-description b {
+    font-weight: bold;
+    color: #F1C40F; /* Warna kuning untuk teks tebal */
+}
+
+/* Ilustrasi */
+.hero-illustration {
+    flex: 1; /* Ilustrasi juga akan mengisi sisa ruang */
+    display: flex;
+    justify-content: center; /* Pusatkan gambar */
+    align-items: center; /* Pusatkan gambar secara vertikal */
+    margin-top: 20px; /* Memberikan jarak antara deskripsi dan gambar */
+}
+
+.hero-illustration img {
+    max-width: 100%; /* Membuat gambar responsif */
+    max-height: 400px; /* Batas tinggi gambar */
+    border-radius: 15px; /* Sudut melengkung pada gambar */
+}
+
+
+
+/* Deskripsi About */
+.description-about {
+    background-color: white; /* Latar belakang putih */
+    padding: 80px 0;
+    color: #333; /* Warna teks utama */
+}
+
+.description-about .card-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.card-background,
+.card {
+    background-color: white; /* Latar belakang putih untuk setiap kartu */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4A90E2; /* Border biru */
+}
+
+.title-section {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #9B5DE5; /* Warna ungu untuk judul */
+    margin-bottom: 20px;
+}
+
+.section-description b {
+    font-weight: bold;
+    color: #F1C40F; /* Warna kuning untuk teks tebal */
+}
+.section-description {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Jarak antar baris agar lebih mudah dibaca */
+    color: #555; /* Warna teks lebih gelap untuk deskripsi */
+    margin-bottom: 20px; /* Spasi antar paragraf */
+    text-align: justify; /* Meratakan teks di kiri dan kanan */
+}
+
+/* Mengatur agar ada spasi antar item list */
+.section-description ul {
+    list-style-position: inside; /* Mengatur posisi bullet point di dalam teks */
+    padding-left: 20px;
+}
+
+.section-description li {
+    margin-bottom: 10px; /* Jarak antar list item */
+}
+
+.card-body {
+    text-align: left; /* Mengatur teks agar rata kiri */
+}
+
+
+
+/* Lokasi Section */
+.lower-content {
+    background-color: white; /* Latar belakang putih */
+    padding: 60px 20px; /* Ruang dalam yang cukup */
+    color: #333; /* Warna teks utama */
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    margin: 40px auto; /* Spasi atas-bawah dan tengah */
+    max-width: 800px; /* Batasi lebar agar seimbang */
+    border: 2px solid #4A90E2; /* Border biru */
+}
+
+.lower-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #9B5DE5; /* Warna ungu untuk judul */
+    margin-bottom: 20px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width: 100%; /* Buat peta responsif */
+    max-width: 800px; /* Batasi lebar maksimal */
+    margin: 0 auto; /* Pusatkan elemen */
+}
+
+.gmap_canvas iframe {
+    width: 100%; /* Responsif untuk layar kecil */
+    height: 100%; /* Sesuaikan tinggi */
+    border: none; /* Hilangkan border iframe */
+    border-radius: 15px; /* Tambahkan sudut melengkung */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .lower-content {
+        padding: 40px 15px;
+    }
+
+    .lower-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .mapouter {
+        height: 350px; /* Kurangi tinggi untuk layar kecil */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-description {
+        padding: 30px;
+    }
+
+    .hero-description h2 {
+        font-size: 2rem;
+    }
+
+    .hero-description p {
+        font-size: 1rem;
+    }
+}
+
+
+

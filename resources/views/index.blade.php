@@ -32,7 +32,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Ruang Agrokomplek</h5>
                         <p class="card-text">Ruang ini memiliki kapasitas 50-100 orang dan biasanya digunakan untuk perkuliahan.</p>
-                        <button class="btn btn-outline-primary">Lihat Detail</button>
+                        <button class="btn btn-lihat-detail">Lihat Detail</button>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Ruang Lab FMIPA</h5>
                         <p class="card-text">Lab dengan fasilitas komputer untuk praktikum, kapasitas hingga 20-25 orang.</p>
-                        <button class="btn btn-outline-primary">Lihat Detail</button>
+                        <button class="btn btn-lihat-detail">Lihat Detail</button>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Ruang Widya Saba</h5>
                         <p class="card-text">Ruang ini digunakan oleh universitas untuk berbagai kegiatan resmi.</p>
-                        <button class="btn btn-outline-primary">Lihat Detail</button>
+                        <button class="btn btn-lihat-detail">Lihat Detail</button>
                     </div>
                 </div>
             </div>
@@ -121,57 +121,93 @@
         height: auto;
     }
 
-    @media (max-width: 768px) {
-        .hero h2 {
-            font-size: 2rem;
-        }
 
-        .hero p {
-            font-size: 1rem;
-        }
-    }
-
-    /* Cards Section */
-    .hover-effect-rgb {
+    /* Tombol Hero Gradasi */
+    .btn-primary {
+        background: linear-gradient(135deg, #9B5DE5, #00B4D8);
+        border: none;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 5px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 10px;
     }
 
-    .hover-effect-rgb:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .card-title {
-        font-size: 1.25rem;
-        font-weight: bold;
-    }
-
-    .btn-outline-primary {
-        border-radius: 20px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .btn-outline-primary:hover {
-        background-color: #007bff;
+    .btn-primary:hover {
+        background: linear-gradient(135deg, #00B4D8,#9B5DE5);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         color: white;
     }
 
-    /* Title */
-    .title-daftar-ruangan {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #007bff;
+    /* Cards Section */
+/* Cards Section */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.btn-outline-primary {
+    color: white;
+    border-color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+
+/* Tombol Lihat Detail */
+.btn-lihat-detail {
+    background: linear-gradient(135deg, #9B5DE5, #00B4D8);
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-lihat-detail:hover {
+    background: linear-gradient(135deg, #00B4D8, #9B5DE5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.25rem;
     }
 
-    /* Responsive Layout */
-    @media (max-width: 768px) {
-        .hero-description h2 {
-            font-size: 2.2rem;
-        }
-
-        .hero-description p {
-            font-size: 1rem;
-        }
+    .card-text {
+        font-size: 0.9rem;
     }
+}
+
+
+
+
+
+
+
+
 </style>

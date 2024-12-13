@@ -19,6 +19,17 @@
     height: 50px;
 }
 
+/* Styling untuk Logo Navbar dengan Efek Cahaya Halus */
+.navbar-brand img {
+    filter: drop-shadow(0 0 8px rgba(33, 150, 243, 0.6)) drop-shadow(0 0 12px rgba(98, 0, 238, 0.4));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(33, 150, 243, 0.8)) drop-shadow(0 0 15px rgba(98, 0, 238, 0.6));
+}
+
 .navbar-nav {
     display: flex;
     gap: 30px;
@@ -27,7 +38,7 @@
 
 .nav-link {
     font-size: 18px;
-    color: #333 !important;
+    color: rgba(33, 150, 243, 0.8) !important;
     position: relative;
     transition: all 0.3s ease;
     padding: 8px 15px;
@@ -41,7 +52,7 @@
     bottom: -5px;
     width: 0;
     height: 2px;
-    background: #333;
+    background: linear-gradient(135deg, rgba(98, 0, 238, 0.8), rgba(33, 150, 243, 0.8));
     transition: width 0.3s ease;
 }
 
@@ -51,18 +62,27 @@
 
 /* Tombol Login */
 .btn-login {
-    padding: 8px 20px;
-    border: 2px solid #333;
+    background: linear-gradient(135deg, rgba(98, 0, 238, 0.8), rgba(33, 150, 243, 0.8));
+    color: white;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
     transition: all 0.3s ease;
     text-align: center;
     margin-left: auto; /* Mendorong tombol ke kanan */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-login:hover {
     background: #333;
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(33, 150, 243, 1), rgba(98, 0, 238, 1));
+    color: white;
 }
 
 /* Navbar Alignment Fix */

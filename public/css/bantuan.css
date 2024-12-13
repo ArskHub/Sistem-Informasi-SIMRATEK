@@ -1,0 +1,200 @@
+/* Hero Section */
+.hero-bantuan {
+    background-color: white; /* Latar belakang putih */
+    padding: 80px 0;
+    color: #333; /* Warna teks utama */
+}
+
+.hero__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-description {
+    background-color: white; /* Latar belakang putih untuk deskripsi */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #007bff; /* Border biru */
+}
+
+.hero-description h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #9B5DE5; /* Warna ungu untuk judul */
+    margin-bottom: 20px;
+}
+
+.hero-description p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555; /* Warna teks lebih gelap untuk deskripsi */
+    margin-top: 10px;
+}
+
+.hero-description span {
+    color: #4A90E2; /* Warna biru untuk teks dalam span */
+}
+
+.hero-description b {
+    font-weight: bold;
+    color: #F1C40F; /* Warna kuning untuk teks tebal */
+}
+
+/* Section: How To Use SIMRATEK */
+.how-use-simratek h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #9B5DE5; /* Warna ungu untuk judul */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list-tahapan {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff; /* Border biru */
+}
+
+.list-tahapan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-tahapan li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555; /* Warna teks */
+    margin-bottom: 15px;
+}
+
+.list-tahapan li::before {
+    content: "✔️"; /* Menambahkan icon centang */
+    margin-right: 10px;
+    color: #F1C40F; /* Warna kuning untuk icon */
+}
+
+.list-tahapan li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Container styling */
+.how-use-simratek {
+    font-family: Arial, sans-serif; /* Gunakan font yang bersih */
+}
+
+.how-use-simratek .title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #9B5DE5; /* Warna ungu untuk judul */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk setiap item */
+.custom-list-item {
+    display: flex; /* Gunakan flexbox untuk mengatur teks dan panah */
+    justify-content: space-between; /* Pisahkan teks di kiri dan panah di kanan */
+    align-items: center; /* Rata tengah secara vertikal */
+    padding: 15px 20px; /* Berikan ruang dalam */
+    margin-bottom: 10px; /* Jarak antar item */
+    border: 1px solid #007bff; /* Border biru */
+    border-radius: 10px; /* Sudut melengkung */
+    background-color: #ffffff; /* Latar belakang putih */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Animasi hover */
+    cursor: pointer; /* Tampilkan pointer pada hover */
+}
+
+/* Styling teks di dalam item */
+.custom-list-item span {
+    font-size: 1rem; /* Ukuran font */
+    color: #333; /* Warna teks */
+}
+
+/* Styling untuk panah */
+.custom-list-item .arrow {
+    font-size: 1.2rem; /* Ukuran panah lebih besar */
+    color: #007bff; /* Warna biru untuk panah */
+}
+
+/* Hover efek */
+.custom-list-item:hover {
+    background-color: #f0f8ff; /* Latar belakang biru terang saat hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+}
+
+/* Styling unik untuk langkah */
+.step-1 {
+    border-left: 5px solid #4A90E2; /* Garis biru di kiri */
+}
+
+.step-2 {
+    border-left: 5px solid #9B5DE5; /* Garis ungu di kiri */
+}
+
+.step-3 {
+    border-left: 5px solid #4A90E2; /* Garis biru di kiri */
+}
+
+.step-4 {
+    border-left: 5px solid #9B5DE5; /* Garis ungu di kiri */
+}
+
+.step-5 {
+    border-left: 5px solid #4A90E2; /* Garis biru di kiri */
+}
+.step-6 {
+    border-left: 5px solid #9B5DE5; /* Garis ungu di kiri */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    .custom-list-item {
+        padding: 10px 15px; /* Kurangi padding */
+    }
+
+    .custom-list-item span {
+        font-size: 0.9rem; /* Ukuran font lebih kecil */
+    }
+
+    .custom-list-item .arrow {
+        font-size: 1rem; /* Panah lebih kecil */
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-description {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .hero-description h2 {
+        font-size: 2rem; /* Mengurangi ukuran font pada perangkat kecil */
+    }
+
+    .list-tahapan {
+        padding: 20px;
+    }
+
+    .how-use-simratek h2 {
+        font-size: 1.8rem; /* Mengurangi ukuran font judul */
+    }
+}
