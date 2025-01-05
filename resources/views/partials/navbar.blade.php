@@ -4,7 +4,7 @@
   <div class="container">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="img/logotext.png" alt="LOGO" height="50">
+      <img src="img/logotext2.png" alt="LOGO" height="50">
     </a>
 
     <!-- Toggle Button for Mobile -->
